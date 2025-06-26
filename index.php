@@ -112,13 +112,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['buscar_global'])) {
 </head>
 <body>
     <div class="container">
-        <h1>Seleccione su Iglesia</h1>
+        <h1>Seleccione su Capilla</h1>
         <h2>Usuario y Contraseña</h2>
         <form method="POST" action="">
             <div class="mb-3">
-                <label for="iglesia" class="form-label">Iglesia:</label>
+                <label for="iglesia" class="form-label">Capilla:</label>
                 <select class="form-control" name="iglesia" required>
-                    <option value="">-- Elija una iglesia --</option>
+                    <option value="">-- Elija una Capilla --</option>
                     <?php foreach ($iglesias as $iglesia): ?>
                         <option value="<?= htmlspecialchars($iglesia['id']) ?>"><?= htmlspecialchars($iglesia['nombre']) ?></option>
                     <?php endforeach; ?>
